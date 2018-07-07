@@ -40,6 +40,19 @@
 
 		<jarsigner.skip>true</jarsigner.skip>
 	</properties>
+	<repositories>
+		<repository>
+			<id>oss.sonatype.org</id>
+			<name>Sonatype Snapshot Repository</name>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
 
 	<dependencies>
 		<dependency>
@@ -129,6 +142,11 @@
 			<artifactId>orange-extensions</artifactId>
 			<version>1.0</version>
 			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.github.dragon66</groupId>
+			<artifactId>icafe</artifactId>
+			<version>1.1-SNAPSHOT</version>
 		</dependency>
 
 		<dependency>

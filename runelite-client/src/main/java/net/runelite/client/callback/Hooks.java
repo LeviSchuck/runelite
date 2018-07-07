@@ -334,10 +334,12 @@ public class Hooks implements Callbacks
 			image = stretchedImage;
 		}
 
+		drawManager.processDrawComplete(image);
+
 		// Draw the image onto the game canvas
 		graphics.drawImage(image, 0, 0, client.getCanvas());
 
-		drawManager.processDrawComplete(image);
+
 	}
 
 	@Override
